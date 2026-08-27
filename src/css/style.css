@@ -1,0 +1,245 @@
+:root {
+    --green: #2e7d32;
+    --green-dark: #1b5e20;
+    --green-light: #e8f5e9;
+    --text: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    color: var(--green);
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+/* nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 10px 0;
+    flex: 1;
+}
+
+nav>ul {
+    border-top: 1px solid #eee;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a,
+nav>ul>li>span {
+    cursor: pointer;
+    padding: 8px 5px;
+}
+
+nav a:hover,
+nav>ul>li:hover>span {
+    color: var(--green);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    min-width: 160px;
+    display: none;
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+}
+
+.dropdown-menu li:hover {
+    background: var(--green-light);
+}
+
+/* product filter buttons */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--green);
+    background: #fff;
+    color: var(--green);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--green);
+    color: #fff;
+}
+
+/* product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px 40px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.hot-tag {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: var(--green);
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 6px;
+}
+
+.product-card img {
+    width: 80%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-price {
+    color: var(--green-dark);
+    margin: 5px 0;
+}
+
+.buy-btn {
+    display: none;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.product-card:hover .buy-btn {
+    display: block;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .logo {
+    margin: 0 0 10px;
+}
+
+/* toast noti */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--green);
+    color: #fff;
+    padding: 12px 20px;
+    display: none;
+}
+
+.toast.show {
+    display: block;
+}
+
+/* info-product page */
+.info-product-wrap {
+    display: flex;
+    gap: 60px;
+    padding: 30px 20px;
+}
+
+.info-product-wrap .left {
+    flex: 1;
+}
+
+
+.info-product-wrap .left img {
+    height: 100%;
+    width: 80%;
+}
+
+.info-product-wrap .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-product-wrap .right .buy-btn {
+    display: block;
+    width: 100%;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 20px 40px;
+}
+
+.info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.productInfoImage {
+    width: 200px;
+    height: 300px;
+}
