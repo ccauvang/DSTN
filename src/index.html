@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đặc Sản Tây Nguyên</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Đặc Sản Tây Nguyên</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="info-seller.html">Thông Tin Người Bán</a></li>
+                <li class="dropdown">
+                    <span>Loại Nông Sản</span>
+                    <ul class="dropdown-menu">
+                        <li data-type="trai-cay">Trái Cây</li>
+                        <li data-type="hat-say-kho">Hạt / Sấy Khô</li>
+                        <li data-type="gia-vi">Gia Vị</li>
+                        <li data-type="khac">Khác</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <div class="filter-bar">
+                <button class="filter-btn" data-type="trai-cay">Trái Cây</button>
+                <button class="filter-btn" data-type="hat-say-kho">Hạt / Sấy Khô</button>
+                <button class="filter-btn" data-type="gia-vi">Gia Vị</button>
+                <button class="filter-btn" data-type="khac">Khác</button>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <!-- cards injected by main.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">Đặc Sản Tây Nguyên</div>
+        <p>Địa chỉ: 123 Đường Nông Trại, Đà Lạt, Lâm Đồng</p>
+        <p>Hotline: 0909 123 456</p>
+        <p>Email: contact@greenfarmthings.vn</p>
+    </footer>
+
+    <div class="toast" id="toast">Mua hàng thành công!</div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
