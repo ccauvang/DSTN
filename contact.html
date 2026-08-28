@@ -3,39 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Thông Tin Người Bán - Đặc Sản Tây Nguyên</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Đặc Sản Tây Nguyên</title>
+    <meta name="description"
+        content="Liên hệ Đặc Sản Tây Nguyên để đặt hàng hoặc tư vấn sản phẩm: cà phê, mật ong rừng, mắc ca, tiêu Tây Nguyên.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">Đặc Sản Tây Nguyên</div>
-        <nav>
+    <header class="site-header">
+        <div class="brand">
+            <span class="logo-mark">TN</span>
+            <span class="brand-text">
+                <span class="name">Đặc Sản Tây Nguyên</span>
+                <span class="tagline">Tinh hoa núi rừng trong từng sản phẩm</span>
+            </span>
+        </div>
+        <nav class="main-nav" aria-label="Điều hướng chính">
             <ul>
-                <li><a href="index.html">Trang Chủ</a></li>
-                <li><a href="info-seller.html">Thông Tin Người Bán</a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main style="padding: 30px 20px; max-width: 700px; margin: 0 auto;">
-        <h1>Đặc Sản Tây Nguyên</h1>
-        <p>Đặc Sản Tây Nguyên là nhà phân phối các sản phẩm đặc biệt của vùng núi rừng tây nguyên.</p>
+    <main>
+        <section>
+            <h1>Liên hệ / Đặt hàng</h1>
+            <p class="section-intro">Gửi thông tin để được tư vấn sản phẩm hoặc đặt hàng, đội ngũ Đặc Sản Tây Nguyên sẽ
+                phản hồi trong 24 giờ.</p>
 
-        <h2>Cam kết</h2>
-        <ul>
-            <li>Không thuốc trừ sâu hóa học</li>
-            <li>Thu hoạch theo đơn đặt hàng</li>
-            <li>Đổi trả trong 72h nếu sản phẩm lỗi</li>
-        </ul>
+            <div class="contact-layout">
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="fullname">Họ và tên</label>
+                        <input type="text" id="fullname" name="fullname" required autocomplete="name">
+                    </div>
 
-        <h2>Liên hệ</h2>
-        <p>Địa chỉ: 123 Đường Nông Trại, Đà Lạt, Lâm Đồng</p>
-        <p>Hotline: 0909 123 456</p>
-        <p>Email: contact@dacsantn.com.vn</p>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel" pattern="[0-9]{9,11}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product">Sản phẩm quan tâm</label>
+                        <select id="product" name="product" required>
+                            <option value="" selected disabled>Chọn sản phẩm</option>
+                            <option value="mat-ong-rung">Mật Ong Rừng Tự Nhiên</option>
+                            <option value="bo-034">Bơ 034</option>
+                            <option value="mac-ca">Hạt Mắc Ca Nứt Vỏ</option>
+                            <option value="tieu-do">Tiêu Đỏ Tây Nguyên</option>
+                            <option value="khac">Sản phẩm khác</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Nội dung liên hệ</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Gửi liên hệ</button>
+                </form>
+
+                <aside class="contact-info" aria-label="Thông tin liên hệ bổ sung">
+                    <h2>Thông tin liên hệ</h2>
+                    <p>Địa chỉ: 123 Đường Nông Trại, Đà Lạt, Lâm Đồng</p>
+                    <p>Hotline: 0909 123 456</p>
+                    <p>Email: contact@dacsantaynguyen.vn</p>
+                    <p>Giờ làm việc: 8:00 - 18:00, Thứ 2 - Thứ 7</p>
+                </aside>
+            </div>
+        </section>
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <span class="name" style="color:#fff; font-weight:700;">Đặc Sản Tây Nguyên</span>
+                <p>Nông sản sạch từ vùng núi rừng Tây Nguyên.</p>
+            </div>
+            <div>
+                <h3 style="color:#fff;">Liên hệ</h3>
+                <p>123 Đường Nông Trại, Đà Lạt, Lâm Đồng</p>
+                <p>Hotline: 0909 123 456</p>
+                <p>Email: contact@dacsantaynguyen.vn</p>
+            </div>
+            <div>
+                <h3 style="color:#fff;">Liên kết</h3>
+                <p><a href="index.html">Trang chủ</a></p>
+                <p><a href="products.html">Sản phẩm</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Đặc Sản Tây Nguyên. Đã đăng ký bản quyền.</div>
+    </footer>
 
 </body>
 

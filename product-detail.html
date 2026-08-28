@@ -3,42 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Chi Tiết Sản Phẩm - Đặc Sản Tây Nguyên</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mật Ong Rừng Tự Nhiên - Đặc Sản Tây Nguyên</title>
+    <meta name="description"
+        content="Mật ong rừng tự nhiên Tây Nguyên nguyên chất, khai thác từ rừng nguyên sinh, đóng chai 1 lít, hạn dùng 24 tháng.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">Đặc Sản Tây Nguyên</div>
-        <nav>
+    <header class="site-header">
+        <div class="brand">
+            <span class="logo-mark">TN</span>
+            <span class="brand-text">
+                <span class="name">Đặc Sản Tây Nguyên</span>
+                <span class="tagline">Tinh hoa núi rừng trong từng sản phẩm</span>
+            </span>
+        </div>
+        <nav class="main-nav" aria-label="Điều hướng chính">
             <ul>
-                <li><a href="index.html">Trang Chủ</a></li>
-                <li><a href="info-seller.html">Thông Tin Người Bán</a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="product-detail.html">Chi tiết sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="info-product-wrap" id="info-product-wrap">
-            <!-- injected by info-product.js -->
-        </div>
+        <section>
+            <div class="detail-layout">
+                <div class="detail-image">
+                    <img src="assets/images/mat-ong-rung.png" alt="Chai mật ong rừng tự nhiên Tây Nguyên 1 lít">
+                </div>
 
-        <table class="info-table" id="info-table">
-            <!-- injected by info-product.js -->
-        </table>
+                <div class="detail-info">
+                    <h1>Mật Ong Rừng Tự Nhiên</h1>
+                    <p>Mật ong nguyên chất khai thác từ rừng nguyên sinh Tây Nguyên, không pha tạp, không qua xử lý
+                        nhiệt. Vị ngọt thanh, thơm đặc trưng của hoa rừng cao nguyên, phù hợp dùng trực tiếp hoặc pha
+                        chế đồ uống.</p>
+                    <span class="price">600.000 VNĐ / 1L</span>
+
+                    <dl>
+                        <dt>Xuất xứ</dt>
+                        <dd>CP Farm VN - rừng nguyên sinh Tây Nguyên</dd>
+                        <dt>Khối lượng</dt>
+                        <dd>1 lít / chai</dd>
+                        <dt>Hạn sử dụng</dt>
+                        <dd>24 tháng kể từ ngày sản xuất</dd>
+                        <dt>Cách bảo quản</dt>
+                        <dd>Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp</dd>
+                    </dl>
+
+                    <div class="action-group">
+                        <button type="button">Thêm vào giỏ hàng</button>
+                        <a href="contact.html"><button type="button" class="secondary">Liên hệ tư vấn</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h2>Sản phẩm liên quan</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <img src="assets/images/bo.png" alt="Bơ 034 tươi hái từ vườn nông dân Việt Nam">
+                        <h3>Bơ 034</h3>
+                        <span class="price">39.000 VNĐ / 1Kg</span>
+                        <div class="card-footer">
+                            <a href="product-detail.html">Xem chi tiết</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="assets/images/mac-ca.png" alt="Hạt mắc ca nứt vỏ Tây Nguyên">
+                        <h3>Hạt Mắc Ca Nứt Vỏ</h3>
+                        <span class="price">300.000 VNĐ / 1Kg</span>
+                        <div class="card-footer">
+                            <a href="product-detail.html">Xem chi tiết</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <img src="assets/images/tieu-do.png" alt="Tiêu đỏ Tây Nguyên đóng lọ 500g">
+                        <h3>Tiêu Đỏ Tây Nguyên</h3>
+                        <span class="price">80.000 VNĐ / Lọ</span>
+                        <div class="card-footer">
+                            <a href="product-detail.html">Xem chi tiết</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="logo">Đặc Sản Tây Nguyên</div>
-        <p>Địa chỉ: 123 Đường Nông Trại, Đà Lạt, Lâm Đồng</p>
-        <p>Hotline: 0909 123 456</p>
-        <p>Email: contact@greenfarmthings.vn</p>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <span class="name" style="color:#fff; font-weight:700;">Đặc Sản Tây Nguyên</span>
+                <p>Nông sản sạch từ vùng núi rừng Tây Nguyên.</p>
+            </div>
+            <div>
+                <h3 style="color:#fff;">Liên hệ</h3>
+                <p>123 Đường Nông Trại, Đà Lạt, Lâm Đồng</p>
+                <p>Hotline: 0909 123 456</p>
+                <p>Email: contact@dacsantaynguyen.vn</p>
+            </div>
+            <div>
+                <h3 style="color:#fff;">Liên kết</h3>
+                <p><a href="products.html">Sản phẩm</a></p>
+                <p><a href="contact.html">Liên hệ tư vấn</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Đặc Sản Tây Nguyên. Đã đăng ký bản quyền.</div>
     </footer>
 
-    <div class="toast" id="toast">Mua hàng thành công!</div>
-
-    <script src="js/info-product.js"></script>
 </body>
 
 </html>
